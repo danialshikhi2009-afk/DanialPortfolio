@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danial | Portfolio</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
@@ -11,7 +13,10 @@
 
 <header>
     <nav class="navbar">
-        <a href="#" class="logo">Danial<span>.</span></a>
+
+        <a href="#" class="logo">
+            Danial<span>.</span>
+        </a>
 
         <div class="nav-links">
             <a href="#home">خانه</a>
@@ -19,11 +24,13 @@
             <a href="#projects">نمونه‌کارها</a>
             <a href="#contact">ارتباط</a>
         </div>
+
     </nav>
 </header>
 
 
 <main>
+
 
 <section id="home" class="hero">
 
@@ -33,13 +40,16 @@
             به وب‌سایت شخصی من خوش آمدید
         </p>
 
+
         <h1>
             سلام، من <span>دانیال</span> هستم
         </h1>
 
+
         <p>
             طراحی سایت و پروژه‌های خلاقانه
         </p>
+
 
         <a href="#projects" class="btn">
             مشاهده نمونه‌کارها
@@ -53,12 +63,14 @@
 
 <section id="about" class="section">
 
-    <h2>درباره من</h2>
+    <h2>
+        درباره من
+    </h2>
+
 
     <p>
         من دانیال هستم و در زمینه طراحی سایت،
         برنامه‌نویسی و ساخت پروژه‌های خلاقانه فعالیت می‌کنم.
-        هدف من ساخت تجربه‌های زیبا و کاربردی در دنیای دیجیتال است.
     </p>
 
 </section>
@@ -67,11 +79,15 @@
 
 <section id="projects" class="section">
 
-    <h2>نمونه‌کارهای من</h2>
+    <h2>
+        نمونه‌کارهای من
+    </h2>
+
 
     <p>
-        برخی از پروژه‌هایی که ساخته‌ام:
+        پروژه‌هایی که ساخته‌ام:
     </p>
+
 
 
     <div class="projects-grid">
@@ -79,16 +95,21 @@
 
         <div class="project-card">
 
-            <img src="{{ url_for('static', filename='images/project1.jpg') }}"
+
+            <img
+            src="{{ url_for('static', filename='images/project1.jpg.webp') }}"
             alt="پروژه اول">
+
 
             <h3>
                 پروژه اول
             </h3>
 
+
             <p>
                 طراحی و توسعه یک پروژه شخصی
             </p>
+
 
         </div>
 
@@ -100,15 +121,18 @@
                 02
             </div>
 
+
             <h3>
                 پروژه دوم
             </h3>
+
 
             <p>
                 به‌زودی اضافه می‌شود
             </p>
 
         </div>
+
 
 
 
@@ -118,9 +142,11 @@
                 03
             </div>
 
+
             <h3>
                 پروژه سوم
             </h3>
+
 
             <p>
                 به‌زودی اضافه می‌شود
@@ -136,7 +162,9 @@
 
 
 
+
 <section id="contact" class="section">
+
 
     <h2>
         ارتباط با من
@@ -144,20 +172,23 @@
 
 
     <p>
-        برای همکاری یا ارتباط می‌توانید از راه‌های زیر اقدام کنید:
+        برای همکاری و ارتباط می‌توانید پیام دهید.
     </p>
+
 
 
     <div class="contact-buttons">
 
-        <a class="btn" href="#">
+
+        <a href="#" class="btn">
             تلگرام
         </a>
 
 
-        <a class="btn" href="#">
+        <a href="#" class="btn">
             واتساپ
         </a>
+
 
     </div>
 
@@ -165,15 +196,17 @@
 </section>
 
 
+
 </main>
+
 
 
 
 <footer>
 
-<p>
-© 2026 Danial | تمام حقوق محفوظ است
-</p>
+    <p>
+        © 2026 Danial | تمام حقوق محفوظ است
+    </p>
 
 </footer>
 
@@ -182,4 +215,5 @@
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
+
 </html>
