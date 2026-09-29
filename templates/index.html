@@ -4,37 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Danial | Portfolio</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
+
 <body>
 
+
 <header>
+
     <nav class="navbar">
 
         <a href="#" class="logo">
             Danial<span>.</span>
         </a>
 
+
         <div class="nav-links">
+
             <a href="#home">خانه</a>
             <a href="#about">درباره من</a>
             <a href="#projects">نمونه‌کارها</a>
             <a href="#contact">ارتباط</a>
+
         </div>
 
     </nav>
+
 </header>
+
+
 
 
 <main>
 
 
+
 <section id="home" class="hero">
 
+
     <div class="hero-content">
+
 
         <p class="subtitle">
             به وب‌سایت شخصی من خوش آمدید
@@ -55,13 +68,18 @@
             مشاهده نمونه‌کارها
         </a>
 
+
     </div>
+
 
 </section>
 
 
 
+
+
 <section id="about" class="section">
+
 
     <h2>
         درباره من
@@ -73,11 +91,17 @@
         برنامه‌نویسی و ساخت پروژه‌های خلاقانه فعالیت می‌کنم.
     </p>
 
+
 </section>
 
 
 
+
+
+
+
 <section id="projects" class="section">
+
 
     <h2>
         نمونه‌کارهای من
@@ -93,10 +117,11 @@
     <div class="projects-grid">
 
 
+
         <div class="project-card">
 
 
-            <img
+            <img 
             src="{{ url_for('static', filename='images/project1.jpg.webp') }}"
             alt="پروژه اول">
 
@@ -115,7 +140,10 @@
 
 
 
+
+
         <div class="project-card">
+
 
             <div class="project-placeholder">
                 02
@@ -131,12 +159,15 @@
                 به‌زودی اضافه می‌شود
             </p>
 
+
         </div>
 
 
 
 
+
         <div class="project-card">
+
 
             <div class="project-placeholder">
                 03
@@ -152,13 +183,18 @@
                 به‌زودی اضافه می‌شود
             </p>
 
+
         </div>
+
 
 
     </div>
 
 
 </section>
+
+
+
 
 
 
@@ -171,8 +207,9 @@
     </h2>
 
 
+
     <p>
-        برای همکاری و ارتباط می‌توانید پیام دهید.
+        برای همکاری یا ارتباط با من می‌توانید از راه‌های زیر استفاده کنید:
     </p>
 
 
@@ -180,24 +217,42 @@
     <div class="contact-buttons">
 
 
-        <a href="#" class="btn">
+        <a 
+        href="https://t.me/Danial_7491" 
+        class="btn"
+        target="_blank">
+
             تلگرام
+
         </a>
 
 
-        <a href="#" class="btn">
+
+
+
+        <a 
+        href="https://wa.me/989170738890" 
+        class="btn"
+        target="_blank">
+
             واتساپ
+
         </a>
+
 
 
     </div>
+
 
 
 </section>
 
 
 
+
+
 </main>
+
 
 
 
@@ -212,7 +267,10 @@
 
 
 
+
+
 <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 
 </body>
 
