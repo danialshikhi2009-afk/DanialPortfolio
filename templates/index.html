@@ -1,80 +1,185 @@
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دانیال | نمونه کارها</title>
+    <title>Danial | Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">Danial<span>.</span></a>
-            <div class="nav-links">
-                <a href="#home">خانه</a>
-                <a href="#about">درباره من</a>
-                <a href="#projects">نمونه‌کارها</a>
-                <a href="#contact">ارتباط با من</a>
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">Danial<span>.</span></a>
+
+        <div class="nav-links">
+            <a href="#home">خانه</a>
+            <a href="#about">درباره من</a>
+            <a href="#projects">نمونه‌کارها</a>
+            <a href="#contact">ارتباط</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="subtitle">
+            به وب‌سایت شخصی من خوش آمدید
+        </p>
+
+        <h1>
+            سلام، من <span>دانیال</span> هستم
+        </h1>
+
+        <p>
+            طراحی سایت و پروژه‌های خلاقانه
+        </p>
+
+        <a href="#projects" class="btn">
+            مشاهده نمونه‌کارها
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<section id="about" class="section">
+
+    <h2>درباره من</h2>
+
+    <p>
+        من دانیال هستم و در زمینه طراحی سایت،
+        برنامه‌نویسی و ساخت پروژه‌های خلاقانه فعالیت می‌کنم.
+        هدف من ساخت تجربه‌های زیبا و کاربردی در دنیای دیجیتال است.
+    </p>
+
+</section>
+
+
+
+<section id="projects" class="section">
+
+    <h2>نمونه‌کارهای من</h2>
+
+    <p>
+        برخی از پروژه‌هایی که ساخته‌ام:
+    </p>
+
+
+    <div class="projects-grid">
+
+
+        <div class="project-card">
+
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}"
+            alt="پروژه اول">
+
+            <h3>
+                پروژه اول
+            </h3>
+
+            <p>
+                طراحی و توسعه یک پروژه شخصی
+            </p>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-placeholder">
+                02
             </div>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="subtitle">به وب‌سایت شخصی من خوش آمدید</p>
-                <h1>سلام، من <span>دانیال</span> هستم</h1>
-                <p>به دنیای خلاقیت و تکنولوژی خوش آمدی!</p>
-                <a href="#projects" class="btn">مشاهده نمونه‌کارها</a>
+            <h3>
+                پروژه دوم
+            </h3>
+
+            <p>
+                به‌زودی اضافه می‌شود
+            </p>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-placeholder">
+                03
             </div>
-        </section>
 
-        <section id="about" class="section">
-            <h2>درباره من</h2>
-            <p>من دانیال هستم و به طراحی سایت، برنامه‌نویسی و ساخت پروژه‌های جدید علاقه دارم.</p>
-        </section>
+            <h3>
+                پروژه سوم
+            </h3>
 
-        <section id="projects" class="section">
-            <h2>نمونه‌کارهای من</h2>
-            <p>بعضی از کارها و پروژه‌های من</p>
+            <p>
+                به‌زودی اضافه می‌شود
+            </p>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img
-                        src="{{ url_for('static', filename='images/project1.jpg') }}"
-                        alt="تصویر پروژه اول"
-                    >
-                    <h3>پروژه اول</h3>
-                    <p>یکی از پروژه‌های شخصی من</p>
-                </div>
+        </div>
 
-                <div class="project-card">
-                    <div class="project-placeholder">02</div>
-                    <h3>پروژه دوم</h3>
-                    <p>به‌زودی...</p>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-placeholder">03</div>
-                    <h3>پروژه سوم</h3>
-                    <p>به‌زودی...</p>
-                </div>
-            </div>
-        </section>
+    </div>
 
-        <section id="contact" class="section">
-            <h2>ارتباط با من</h2>
-            <p>برای ارتباط با من می‌توانی از راه‌های زیر استفاده کنی.</p>
-            <p>راه‌های ارتباطی به‌زودی اضافه می‌شوند.</p>
-        </section>
-    </main>
 
-    <footer>
-        <p>© 2026 Danial | تمام حقوق محفوظ است.</p>
-    </footer>
+</section>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+<section id="contact" class="section">
+
+    <h2>
+        ارتباط با من
+    </h2>
+
+
+    <p>
+        برای همکاری یا ارتباط می‌توانید از راه‌های زیر اقدام کنید:
+    </p>
+
+
+    <div class="contact-buttons">
+
+        <a class="btn" href="#">
+            تلگرام
+        </a>
+
+
+        <a class="btn" href="#">
+            واتساپ
+        </a>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 Danial | تمام حقوق محفوظ است
+</p>
+
+</footer>
+
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
