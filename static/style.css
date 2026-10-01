@@ -370,3 +370,65 @@ footer {
         align-items: stretch;
     }
 }
+/* دکمه اشتراک‌گذاری در پایین سایت */
+
+.footer-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* دکمه شناور برگشت به بالای صفحه */
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d8b4fe55;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #a855f7, #6d28d9);
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: opacity .3s ease, transform .3s ease,
+                visibility .3s ease, box-shadow .3s ease;
+    box-shadow: 0 5px 25px #a855f740;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    box-shadow: 0 8px 35px #a855f780;
+    transform: translateY(-4px);
+}
+
+.back-to-top:focus-visible {
+    outline: 2px solid #d8b4fe;
+    outline-offset: 4px;
+}
+
+/* نمایش مناسب در موبایل */
+
+@media (max-width: 400px) {
+    .back-to-top {
+        width: 46px;
+        height: 46px;
+        bottom: 18px;
+        left: 18px;
+        border-radius: 14px;
+    }
+}

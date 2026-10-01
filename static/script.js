@@ -39,4 +39,52 @@ document.addEventListener("DOMContentLoaded", function () {
             observer.observe(card);
         });
     }
+
+    // دکمه اشتراک‌گذاری سایت
+    const shareButton = document.getElementById("shareSite");
+
+    if (shareButton) {
+        shareButton.addEventListener("click", async function () {
+            const shareData = {
+                title: "Danial | نمونه‌کارهای شخصی",
+                text: "وب‌سایت شخصی دانیال؛ طراحی سایت و پروژه‌های خلاقانه",
+                url: window.location.href
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                } else if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(shareData.url);
+                    alert("لینک سایت کپی شد! می‌تونی برای دیگران بفرستی.");
+                } else {
+                    window.prompt("لینک سایتت رو کپی کن:", shareData.url);
+                }
+            } catch (error) {
+                if (error.name !== "AbortError") {
+                    alert("اشتراک‌گذاری انجام نشد. دوباره امتحان کن.");
+                }
+            }
+        });
+    }
+
+    // دکمه برگشت به بالای صفحه
+    const backToTopButton = document.getElementById("backToTop");
+
+    if (backToTopButton) {
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add("show");
+            } else {
+                backToTopButton.classList.remove("show");
+            }
+        });
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    }
 });
